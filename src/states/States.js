@@ -20,7 +20,7 @@ const States = () =>
         try
         {
             let url = 'https://crio-location-selector.onrender.com/countries';
-            const response = await axios.get(url);
+            const response = await axios(url);
             setCountriesList(response.data);
         }
         catch(error)
@@ -34,7 +34,7 @@ const States = () =>
         try
         {
             let url = `https://crio-location-selector.onrender.com/country=${selectCountry}/states`;
-            const response = await axios.get(url);
+            const response = await axios(url);
             setStatesList(response.data);
         }
         catch(error)
@@ -48,7 +48,7 @@ const States = () =>
         try
         {
             let url = `https://crio-location-selector.onrender.com/country=${selectCountry}/state=${selectState}/cities`
-            const response = await axios.get(url);
+            const response = await axios(url);
             setCitiesList(response.data);
         }
         catch(error)
