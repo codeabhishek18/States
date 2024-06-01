@@ -119,8 +119,8 @@ const States = () =>
             {selectCity!== '' && 
                 <p className={states.content}>
                     You selected 
-                    <span> {selectCountry},</span> 
-                    <span> {selectState}, {selectCity}</span>
+                    <span> {selectCity},</span> 
+                    <span> {selectState}, {selectCountry}</span>
                 </p>}
         </div>
     )
