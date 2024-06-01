@@ -1,0 +1,45 @@
+.disable
+{
+    background-color: #ededed;
+    cursor: not-allowed;
+    color: rgb(182, 181, 181);
+    border: 1px solid rgb(221, 217, 217);
+}
+
+.container
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown
+{
+    display: flex;
+    column-gap: 30px;
+}
+
+select
+{
+    height: 40px;
+    width: 200px;
+}
+
+.content
+{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.content>span:first-child
+{
+    font-size: 22px;
+}
+
+.content>span:last-child
+{
+    color: rgb(182, 181, 181);
+    font-size: 18px;
+}
+
